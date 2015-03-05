@@ -15,7 +15,6 @@
 		DDF373E41AA8EE7000A6C369 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF373E31AA8EE7000A6C369 /* AppDelegate.m */; };
 		DDF373E71AA8EE7000A6C369 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF373E51AA8EE7000A6C369 /* Main_iPhone.storyboard */; };
 		DDF373EA1AA8EE7000A6C369 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF373E81AA8EE7000A6C369 /* Main_iPad.storyboard */; };
-		DDF373ED1AA8EE7000A6C369 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF373EC1AA8EE7000A6C369 /* ViewController.m */; };
 		DDF373EF1AA8EE7000A6C369 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF373EE1AA8EE7000A6C369 /* Images.xcassets */; };
 		DDF373F61AA8EE7100A6C369 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF373F51AA8EE7100A6C369 /* XCTest.framework */; };
 		DDF373F71AA8EE7100A6C369 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF373D31AA8EE7000A6C369 /* Foundation.framework */; };
@@ -36,6 +35,9 @@
 		DDF374221AA8F13A00A6C369 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF374211AA8F13A00A6C369 /* SystemConfiguration.framework */; };
 		DDF374241AA8F14600A6C369 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF374231AA8F14600A6C369 /* libz.dylib */; };
 		DDF374261AA8F15400A6C369 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF374251AA8F15400A6C369 /* libsqlite3.dylib */; };
+		DDF3742C1AA8F6AE00A6C369 /* logoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF3742B1AA8F6AE00A6C369 /* logoutViewController.m */; };
+		DDF3742F1AA8F77D00A6C369 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF3742E1AA8F77D00A6C369 /* ViewController.m */; };
+		DDF374321AA8FC1A00A6C369 /* loginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF374311AA8FC1A00A6C369 /* loginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +63,6 @@
 		DDF373E31AA8EE7000A6C369 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DDF373E61AA8EE7000A6C369 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		DDF373E91AA8EE7000A6C369 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		DDF373EB1AA8EE7000A6C369 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DDF373EC1AA8EE7000A6C369 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DDF373EE1AA8EE7000A6C369 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DDF373F41AA8EE7100A6C369 /* MedOrgzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedOrgzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDF373F51AA8EE7100A6C369 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -83,6 +83,12 @@
 		DDF374211AA8F13A00A6C369 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DDF374231AA8F14600A6C369 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		DDF374251AA8F15400A6C369 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		DDF3742A1AA8F6AE00A6C369 /* logoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logoutViewController.h; sourceTree = "<group>"; };
+		DDF3742B1AA8F6AE00A6C369 /* logoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = logoutViewController.m; sourceTree = "<group>"; };
+		DDF3742D1AA8F77D00A6C369 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DDF3742E1AA8F77D00A6C369 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DDF374301AA8FC1A00A6C369 /* loginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginViewController.h; sourceTree = "<group>"; };
+		DDF374311AA8FC1A00A6C369 /* loginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,9 +179,13 @@
 				DDF373E21AA8EE7000A6C369 /* AppDelegate.h */,
 				DDF373E31AA8EE7000A6C369 /* AppDelegate.m */,
 				DDF373E51AA8EE7000A6C369 /* Main_iPhone.storyboard */,
+				DDF374301AA8FC1A00A6C369 /* loginViewController.h */,
+				DDF374311AA8FC1A00A6C369 /* loginViewController.m */,
 				DDF373E81AA8EE7000A6C369 /* Main_iPad.storyboard */,
-				DDF373EB1AA8EE7000A6C369 /* ViewController.h */,
-				DDF373EC1AA8EE7000A6C369 /* ViewController.m */,
+				DDF3742A1AA8F6AE00A6C369 /* logoutViewController.h */,
+				DDF3742D1AA8F77D00A6C369 /* ViewController.h */,
+				DDF3742E1AA8F77D00A6C369 /* ViewController.m */,
+				DDF3742B1AA8F6AE00A6C369 /* logoutViewController.m */,
 				DDF373EE1AA8EE7000A6C369 /* Images.xcassets */,
 				DDF373DA1AA8EE7000A6C369 /* Supporting Files */,
 			);
@@ -309,8 +319,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDF373ED1AA8EE7000A6C369 /* ViewController.m in Sources */,
 				DDF373E41AA8EE7000A6C369 /* AppDelegate.m in Sources */,
+				DDF374321AA8FC1A00A6C369 /* loginViewController.m in Sources */,
+				DDF3742C1AA8F6AE00A6C369 /* logoutViewController.m in Sources */,
+				DDF3742F1AA8F77D00A6C369 /* ViewController.m in Sources */,
 				DDF373E01AA8EE7000A6C369 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
