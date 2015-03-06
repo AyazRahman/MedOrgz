@@ -45,8 +45,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="registration:" destination="7cr-yP-RxN" eventType="touchUpInside" id="8h3-h5-e0A"/>
-                                    <segue destination="A7N-uV-EPk" kind="modal" modalTransitionStyle="flipHorizontal" id="yyJ-yB-tWN"/>
+                                    <action selector="registration:" destination="7cr-yP-RxN" eventType="touchUpInside" id="s1B-au-cxf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -55,7 +54,8 @@
                     <connections>
                         <outlet property="password" destination="wcf-nS-Cmd" id="qCk-PJ-1Rh"/>
                         <outlet property="username" destination="R2c-pq-W0I" id="Kpm-6w-vpj"/>
-                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="login" modalTransitionStyle="flipHorizontal" id="r70-ax-V48"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="next" modalTransitionStyle="flipHorizontal" id="r70-ax-V48"/>
+                        <segue destination="A7N-uV-EPk" kind="modal" identifier="registration" modalTransitionStyle="flipHorizontal" id="QhZ-ZT-CMg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wSq-q9-qCg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -92,10 +92,10 @@
             </objects>
             <point key="canvasLocation" x="571" y="-64"/>
         </scene>
-        <!--View Controller-->
+        <!--Registration View Controller-->
         <scene sceneID="RGM-cO-L5t">
             <objects>
-                <viewController id="A7N-uV-EPk" sceneMemberID="viewController">
+                <viewController id="A7N-uV-EPk" customClass="registrationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="beE-mz-H5a"/>
                         <viewControllerLayoutGuide type="bottom" id="ncF-aT-Uzf"/>
@@ -104,19 +104,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField appearanceType="aqua" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="registration" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hLc-gb-YZD">
-                                <rect key="frame" x="112" y="46" width="97" height="30"/>
+                            <textField appearanceType="aqua" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LCh-bx-kxF">
+                                <rect key="frame" x="20" y="57" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField appearanceType="aqua" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e-mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UfV-kY-7cc">
+                                <rect key="frame" x="20" y="102" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField appearanceType="aqua" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="daD-ZW-J68">
+                                <rect key="frame" x="20" y="148" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField appearanceType="aqua" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="re-type password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JEu-SA-PNx">
+                                <rect key="frame" x="20" y="193" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1n-Ei-A1K">
+                                <rect key="frame" x="20" y="316" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="A7N-uV-EPk" eventType="touchUpInside" id="pp5-7G-EcJ"/>
+                                </connections>
+                            </button>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exX-8A-u3W">
+                                <rect key="frame" x="20" y="269" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="registration:" destination="A7N-uV-EPk" eventType="touchUpInside" id="0Bj-AE-VbY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="email" destination="UfV-kY-7cc" id="9if-zN-MaU"/>
+                        <outlet property="password" destination="daD-ZW-J68" id="UFJ-T5-cwC"/>
+                        <outlet property="retype" destination="JEu-SA-PNx" id="siC-Ly-qGZ"/>
+                        <outlet property="username" destination="LCh-bx-kxF" id="B3B-rX-jxz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nwd-Oa-kFm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="330" y="-815"/>
+            <point key="canvasLocation" x="476" y="-805"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

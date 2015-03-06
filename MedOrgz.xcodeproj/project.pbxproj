@@ -38,6 +38,7 @@
 		DDF3742C1AA8F6AE00A6C369 /* logoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF3742B1AA8F6AE00A6C369 /* logoutViewController.m */; };
 		DDF3742F1AA8F77D00A6C369 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF3742E1AA8F77D00A6C369 /* ViewController.m */; };
 		DDF374321AA8FC1A00A6C369 /* loginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF374311AA8FC1A00A6C369 /* loginViewController.m */; };
+		DDF374361AA9020900A6C369 /* registrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF374341AA9011D00A6C369 /* registrationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,8 @@
 		DDF3742E1AA8F77D00A6C369 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DDF374301AA8FC1A00A6C369 /* loginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginViewController.h; sourceTree = "<group>"; };
 		DDF374311AA8FC1A00A6C369 /* loginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginViewController.m; sourceTree = "<group>"; };
+		DDF374331AA9011D00A6C369 /* registrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = registrationViewController.h; sourceTree = "<group>"; };
+		DDF374341AA9011D00A6C369 /* registrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = registrationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +187,8 @@
 				DDF373E81AA8EE7000A6C369 /* Main_iPad.storyboard */,
 				DDF3742A1AA8F6AE00A6C369 /* logoutViewController.h */,
 				DDF3742D1AA8F77D00A6C369 /* ViewController.h */,
+				DDF374331AA9011D00A6C369 /* registrationViewController.h */,
+				DDF374341AA9011D00A6C369 /* registrationViewController.m */,
 				DDF3742E1AA8F77D00A6C369 /* ViewController.m */,
 				DDF3742B1AA8F6AE00A6C369 /* logoutViewController.m */,
 				DDF373EE1AA8EE7000A6C369 /* Images.xcassets */,
@@ -320,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDF373E41AA8EE7000A6C369 /* AppDelegate.m in Sources */,
+				DDF374361AA9020900A6C369 /* registrationViewController.m in Sources */,
 				DDF374321AA8FC1A00A6C369 /* loginViewController.m in Sources */,
 				DDF3742C1AA8F6AE00A6C369 /* logoutViewController.m in Sources */,
 				DDF3742F1AA8F77D00A6C369 /* ViewController.m in Sources */,
